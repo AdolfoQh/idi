@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantillas para la lámina de entrega</title>
+<meta name="description" content="Plantillas de Canva para armar la lámina de entrega del trabajo práctico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#0198d9;
+    --azul-osc:#0176a6;
+    --verde:#a8ce45;
+    --verde-osc:#8fb32f;
+    --verde-tinta:#26340a;
+    --tinta:#1b1b19;
+    --gris:#5c5a55;
+    --linea:#e3e1dc;
+    --papel:#ffffff;
+    --mesa:#f6f5f2;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--papel);
+    color:var(--tinta);
+    font-family:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:18px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .contenedor{width:100%;max-width:720px;margin:0 auto;padding:0 24px}
+
+  /* marca */
+  .banda{background:var(--azul);padding:22px 0}
+  .marca{max-width:330px}
+  .marca svg{width:100%;height:auto;display:block}
+
+  /* portada */
+  .portada{padding-top:52px;padding-bottom:8px}
+  h1{font-size:40px;line-height:1.15;font-weight:700;letter-spacing:-.015em}
+  .bajada{color:var(--gris);font-size:19px;margin-top:6px}
+  .regla{height:5px;background:var(--azul);margin:26px 0 30px;max-width:180px}
+
+  .intro p+p{margin-top:14px}
+
+  .saltar{
+    display:inline-block;margin-top:26px;
+    background:var(--verde);color:var(--verde-tinta);
+    font-weight:700;font-size:17px;text-decoration:none;
+    padding:12px 22px;border-radius:2px;
+  }
+  .saltar:hover{background:var(--verde-osc)}
+
+  /* secciones */
+  .pasos{padding-top:46px;padding-bottom:10px}
+  section{margin-bottom:42px}
+  h2{
+    font-size:25px;font-weight:700;line-height:1.25;
+    display:flex;gap:14px;align-items:baseline;
+    margin-bottom:6px;
+  }
+  h2 .n{
+    flex:none;
+    color:var(--azul);
+    font-size:25px;
+    font-variant-numeric:tabular-nums;
+  }
+  h2+.borde{height:3px;background:var(--azul);margin-bottom:16px}
+  section p+p{margin-top:12px}
+  h3{font-size:19px;font-weight:600;margin:20px 0 4px}
+
+  /* galería */
+  .galeria{background:var(--mesa);border-top:1px solid var(--linea);padding:52px 0 64px;margin-top:20px}
+  .galeria h2{display:block;font-size:30px;margin-bottom:6px}
+  .galeria .intro-gal{color:var(--gris);margin-bottom:34px;max-width:620px}
+  .grilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:34px}
+  .ficha{display:flex;flex-direction:column}
+  .ficha img{
+    width:100%;height:auto;display:block;
+    border:1px solid var(--linea);background:#fff;
+  }
+  .ficha .num{font-size:15px;font-weight:700;color:var(--azul);margin:14px 0 2px;letter-spacing:.04em}
+  .ficha p{font-size:16px;line-height:1.45;color:var(--gris);flex:1}
+  .ficha a{
+    display:block;text-align:center;margin-top:14px;
+    background:var(--verde);color:var(--verde-tinta);
+    font-weight:700;font-size:16px;text-decoration:none;
+    padding:11px 16px;border-radius:2px;
+  }
+  .ficha a:hover{background:var(--verde-osc)}
+
+  footer{background:var(--azul);color:#fff;padding:24px 0;font-size:15px}
+
+  @media (max-width:600px){
+    body{font-size:17px}
+    h1{font-size:31px}
+    h2{font-size:22px}
+    h2 .n{font-size:22px}
+    .marca{max-width:230px}
+    .portada{padding-top:36px;padding-bottom:4px}
+  }
+</style>
+</head>
+<body>
+
+<div class="banda">
+  <div class="contenedor">
+    <div class="marca"><svg role="img" aria-label="UNCUYO · Facultad de Artes y Diseño · IDI" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="21.99 0 909.20 170.94">
+  <defs>
+    <style>
+      .marca-st0 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="marca-st0" d="M175.96,37.97h-6.58v26.03c0,4.78-.86,8.45-2.6,11.01-1.73,2.57-4.61,3.85-8.65,3.85s-6.92-1.3-8.65-3.91c-1.73-2.61-2.6-6.26-2.6-10.95v-26.03h-6.57v26.9c0,6.4,1.54,11.31,4.63,14.7,3.1,3.4,7.49,5.09,13.19,5.09s10.09-1.69,13.19-5.09c3.09-3.39,4.63-8.3,4.63-14.7v-26.9ZM184.6,83.85h6.58l.13-37.72,20.78,37.72h8.42v-45.88h-6.58l-.13,36.84-20.25-36.85h-8.95v45.88ZM261.39,39.13c-1.71-.74-3.35-1.27-4.93-1.55-1.58-.3-3.37-.44-5.4-.44-7.11,0-12.92,2.16-17.47,6.48-4.54,4.33-6.81,10.02-6.81,17.08s2.2,13.15,6.62,17.47c4.41,4.33,10.27,6.48,17.6,6.48,1.88,0,3.7-.11,5.46-.33,1.76-.21,3.41-.65,4.99-1.32l-.4-6.41c-1.09.67-2.6,1.21-4.53,1.62-1.92.42-3.75.64-5.46.64-4.87,0-8.97-1.66-12.3-5-3.33-3.33-5-7.65-5-12.95s1.62-9.52,4.87-12.89c3.24-3.38,7.49-5.07,12.75-5.07,3.42,0,6.58.85,9.46,2.55l.53-6.38ZM302.01,37.97h-6.58v26.03c0,4.78-.87,8.45-2.6,11.01-1.74,2.57-4.62,3.85-8.65,3.85s-6.93-1.3-8.66-3.91c-1.73-2.61-2.6-6.26-2.6-10.95v-26.03h-6.57v26.9c0,6.4,1.55,11.31,4.64,14.7,3.08,3.4,7.48,5.09,13.2,5.09s10.09-1.69,13.18-5.09c3.08-3.39,4.64-8.3,4.64-14.7v-26.9ZM323.53,83.85h6.57v-19.2l17.89-26.68-7.69.02-13.39,20.54-13.63-20.54-7.67-.02,17.92,26.68v19.2ZM357.02,73.67c-2.52-3.47-3.78-7.71-3.78-12.76s1.31-9.29,3.94-12.76c2.63-3.46,6.34-5.19,11.16-5.19s8.54,1.73,11.17,5.19c2.62,3.48,3.94,7.72,3.94,12.76s-1.29,9.24-3.86,12.73c-2.55,3.48-6.32,5.22-11.26,5.22s-8.81-1.73-11.32-5.19M352.17,43.8c-3.94,4.43-5.92,10.13-5.92,17.11s1.96,12.9,5.88,17.24c3.93,4.35,9.33,6.51,16.21,6.51s12.29-2.18,16.21-6.54c3.92-4.37,5.89-10.1,5.89-17.21s-1.99-12.63-5.96-17.08c-3.98-4.46-9.35-6.68-16.14-6.68s-12.22,2.22-16.18,6.66"/>
+    <path class="marca-st0" d="M154.62,92.71h-2.62v10.43c0,1.91-.35,3.38-1.04,4.41-.69,1.03-1.84,1.54-3.47,1.54s-2.77-.53-3.47-1.56c-.69-1.05-1.03-2.51-1.03-4.39v-10.43h-2.62v10.78c0,2.56.61,4.52,1.85,5.88,1.23,1.36,2.99,2.04,5.27,2.04s4.04-.68,5.28-2.04c1.23-1.36,1.85-3.32,1.85-5.88v-10.78ZM159.3,111.08h2.62l.05-15.11,8.32,15.1h3.36s0-18.36,0-18.36h-2.62l-.05,14.76-8.1-14.76h-3.58v18.37ZM178.32,111.08h2.62v-18.37h-2.62v18.37ZM200.68,92.71h-2.76s-5.88,16.07-5.88,16.07l-5.66-16.07h-2.94l6.91,18.37h3.28l7.04-18.37ZM203.3,111.08h10.3v-2.32h-7.67v-6.06h6.98v-2.31h-6.98v-5.36h7.67v-2.31h-10.3v18.37ZM217.65,111.08h2.61v-8.17h1.59c.83,0,1.46.09,1.88.29.43.2.83.7,1.2,1.51l2.82,6.36h2.99s-3.47-7.3-3.47-7.3c-.28-.55-.54-.96-.8-1.23-.26-.27-.59-.5-.99-.68,1.12-.18,2.04-.66,2.74-1.42.7-.75,1.04-1.66,1.04-2.75,0-2-.62-3.33-1.87-3.98-1.27-.65-3.01-.98-5.26-.98h-4.49v18.37ZM220.26,95.02h2.53c1.19,0,2.1.24,2.74.72.63.48.94,1.14.94,1.98,0,.9-.35,1.59-1.05,2.1-.71.51-1.68.76-2.93.76h-2.24v-5.57ZM242.58,93.06c-.63-.23-1.29-.4-1.97-.51-.69-.1-1.33-.15-1.95-.15-1.71,0-3.13.43-4.24,1.31-1.1.87-1.66,2.11-1.66,3.69s.68,2.93,2.05,3.9c1.26.66,2.55,1.35,3.87,2.06,1.31.71,1.97,1.63,1.97,2.73,0,1.01-.37,1.76-1.13,2.25-.75.5-1.58.75-2.47.75-.59,0-1.25-.09-1.96-.28-.7-.19-1.32-.4-1.85-.64l-.27,2.48c.76.25,1.44.43,2.04.57.59.13,1.17.19,1.74.19,2,0,3.61-.45,4.86-1.34,1.23-.89,1.84-2.27,1.84-4.14,0-1.74-.36-2.89-1.09-3.46-.74-.57-2.05-1.36-3.94-2.37-1.9-1.01-2.85-1.99-2.85-2.93,0-.88.32-1.51.95-1.88.63-.38,1.38-.57,2.26-.57.65,0,1.2.06,1.67.18.46.1,1.06.3,1.77.59l.37-2.41ZM247.02,111.08h2.63v-18.37h-2.63v18.37ZM254.19,111.08h5.41c3.09,0,5.49-.8,7.21-2.41,1.71-1.58,2.58-3.9,2.58-6.94,0-2.76-.94-4.95-2.8-6.58-1.87-1.63-4.2-2.45-7-2.45h-5.41v18.37ZM256.8,95.02h3.09c1.96,0,3.57.61,4.83,1.82,1.25,1.22,1.88,2.88,1.88,4.98,0,2.34-.59,4.09-1.79,5.22-1.19,1.13-2.93,1.71-5.23,1.71h-2.77v-13.74ZM271.3,111.07h2.74s1.89-4.62,1.89-4.62h9.02l1.87,4.61,2.85.02-7.76-18.37h-2.77l-7.83,18.36ZM284.09,104.29h-7.33l3.67-9.13,3.66,9.13ZM292.16,111.08h5.43c3.08,0,5.49-.8,7.21-2.41,1.71-1.58,2.57-3.9,2.57-6.94,0-2.76-.93-4.95-2.79-6.58-1.86-1.63-4.18-2.45-6.99-2.45h-5.43v18.37ZM294.78,95.02h3.08c1.97,0,3.57.61,4.83,1.82,1.25,1.22,1.87,2.88,1.87,4.98,0,2.34-.59,4.09-1.79,5.22-1.19,1.13-2.93,1.71-5.23,1.71h-2.77v-13.74Z"/>
+    <path class="marca-st0" d="M140.31,139.02h2.62l.05-15.1,8.32,15.1h3.37v-18.37h-2.62l-.06,14.76-8.1-14.77h-3.59v18.38ZM157.3,139.02h2.75s1.88-4.62,1.88-4.62h9.02l1.87,4.62h2.85s-7.76-18.36-7.76-18.36h-2.77l-7.84,18.37ZM170.1,132.24h-7.33l3.68-9.14,3.65,9.14ZM191.21,121.13c-.68-.3-1.35-.5-1.97-.61-.63-.11-1.35-.17-2.16-.17-2.84,0-5.17.86-6.98,2.59-1.83,1.73-2.73,4.01-2.73,6.82s.88,5.27,2.65,6.99c1.76,1.73,4.11,2.59,7.04,2.59.75,0,1.48-.05,2.18-.13.7-.09,1.37-.27,2-.53l-.15-2.58c-.45.27-1.04.49-1.82.66-.77.18-1.49.27-2.18.27-1.95,0-3.59-.67-4.92-2-1.32-1.34-2-3.07-2-5.19s.66-3.81,1.95-5.17c1.29-1.36,3-2.02,5.1-2.02,1.37,0,2.63.34,3.79,1.03l.21-2.56ZM194.39,139.02h2.63v-18.37h-2.63v18.37ZM205.06,134.96c-1.01-1.39-1.51-3.1-1.51-5.11s.52-3.72,1.58-5.11c1.05-1.38,2.53-2.08,4.46-2.08s3.41.7,4.46,2.08c1.05,1.39,1.58,3.09,1.58,5.11s-.51,3.71-1.53,5.1c-1.03,1.39-2.53,2.09-4.5,2.09s-3.52-.7-4.53-2.08M203.12,123.01c-1.58,1.77-2.36,4.05-2.36,6.84s.78,5.16,2.36,6.9c1.56,1.74,3.72,2.6,6.48,2.6s4.91-.88,6.48-2.62c1.57-1.75,2.36-4.03,2.36-6.88s-.8-5.05-2.38-6.83c-1.58-1.77-3.74-2.67-6.46-2.67s-4.89.89-6.47,2.66M222.14,139.02h2.63l.04-15.1,8.32,15.1h3.37v-18.37h-2.62l-.06,14.76-8.1-14.77h-3.59v18.38ZM239.13,139.02h2.74s1.88-4.62,1.88-4.62h9.03l1.87,4.62h2.84s-7.75-18.36-7.75-18.36h-2.78l-7.83,18.37ZM251.93,132.24h-7.34l3.67-9.14,3.67,9.14ZM260.13,139.02h10.3v-2.31h-7.69v-16.06h-2.62v18.37ZM280.46,139.02h5.42c3.09,0,5.49-.8,7.21-2.39,1.72-1.59,2.57-3.91,2.57-6.95,0-2.75-.93-4.95-2.79-6.57-1.85-1.64-4.19-2.45-7-2.45h-5.42v18.37ZM283.08,122.96h3.08c1.97,0,3.57.61,4.83,1.83,1.25,1.22,1.88,2.89,1.88,4.99,0,2.34-.6,4.07-1.79,5.22-1.19,1.14-2.93,1.71-5.24,1.71h-2.76v-13.75ZM299.73,139.02h10.29v-2.31h-7.67v-6.06h6.99v-2.31h-6.99v-5.37h7.67v-2.31h-10.29v18.37ZM334.43,121.13c-.68-.3-1.34-.5-1.97-.61-.63-.11-1.35-.17-2.16-.17-2.85,0-5.17.86-6.99,2.59-1.82,1.73-2.72,4.01-2.72,6.82s.87,5.27,2.64,6.99c1.77,1.73,4.11,2.59,7.04,2.59.76,0,1.48-.05,2.18-.13.7-.09,1.37-.27,2-.53l-.16-2.58c-.43.27-1.03.49-1.81.66-.77.18-1.51.27-2.19.27-1.95,0-3.59-.67-4.92-2-1.34-1.34-2-3.07-2-5.19s.64-3.81,1.93-5.17c1.31-1.36,3-2.02,5.11-2.02,1.36,0,2.63.34,3.79,1.03l.21-2.56ZM351.89,120.65h-2.62v10.44c0,1.91-.35,3.38-1.04,4.4-.69,1.02-1.85,1.54-3.47,1.54s-2.77-.52-3.46-1.57c-.7-1.04-1.04-2.5-1.04-4.37v-10.44h-2.62v10.77c0,2.57.62,4.53,1.86,5.89,1.23,1.36,2.99,2.04,5.26,2.04s4.04-.68,5.28-2.04c1.24-1.36,1.85-3.32,1.85-5.89v-10.77ZM361.74,139.02h2.63v-7.68l7.16-10.69h-3.09l-5.34,8.22-5.47-8.21h-3.07s7.19,10.68,7.19,10.68v7.68ZM377.5,134.96c-1.01-1.39-1.51-3.1-1.51-5.11s.54-3.72,1.58-5.11c1.04-1.38,2.54-2.08,4.46-2.08s3.41.7,4.46,2.08c1.05,1.39,1.58,3.09,1.58,5.11s-.51,3.71-1.54,5.1c-1.04,1.39-2.53,2.09-4.5,2.09s-3.52-.7-4.53-2.08M375.56,123.01c-1.57,1.77-2.36,4.05-2.36,6.84s.78,5.16,2.35,6.9c1.58,1.74,3.74,2.6,6.49,2.6s4.91-.88,6.48-2.62c1.57-1.75,2.35-4.03,2.35-6.88s-.79-5.05-2.38-6.83c-1.58-1.77-3.73-2.67-6.45-2.67s-4.9.89-6.48,2.66"/>
+    <polygon class="marca-st0" points="541.46 46.24 546.43 46.24 546.43 44.55 541.46 44.55 541.46 40.63 546.66 40.63 546.66 38.94 539.53 38.94 539.53 52.35 541.46 52.35 541.46 46.24"/>
+    <path class="marca-st0" d="M550.44,48.97h6.57l1.37,3.38h2.1l-5.67-13.41h-2.02l-5.72,13.41h2.02l1.36-3.38ZM553.72,40.75l2.67,6.65h-5.34l2.67-6.65Z"/>
+    <path class="marca-st0" d="M568.8,50.89c-2.79,0-5.06-2.09-5.06-5.25s2.06-5.25,5.15-5.25c.98,0,1.92.25,2.77.75l.15-1.86c-.96-.42-1.98-.58-3.01-.58-4.09,0-7.09,2.75-7.09,6.88s2.83,6.99,7.07,6.99c.79,0,2.04-.06,3.06-.48l-.12-1.86c-.67.4-1.96.65-2.92.65Z"/>
+    <path class="marca-st0" d="M579.36,52.58c3.3,0,5.21-2.02,5.21-5.78v-7.86h-1.92v7.61c0,2.58-.81,4.34-3.29,4.34s-3.29-1.77-3.29-4.34v-7.61h-1.92v7.86c0,3.76,1.9,5.78,5.21,5.78Z"/>
+    <polygon class="marca-st0" points="595.51 50.66 589.9 50.66 589.9 38.94 587.98 38.94 587.98 52.35 595.51 52.35 595.51 50.66"/>
+    <polygon class="marca-st0" points="599.24 52.35 601.16 52.35 601.16 40.63 605.33 40.63 605.33 38.94 595.07 38.94 595.07 40.63 599.24 40.63 599.24 52.35"/>
+    <path class="marca-st0" d="M606.73,52.35l1.36-3.38h6.57l1.36,3.38h2.1l-5.67-13.41h-2.02l-5.73,13.41h2.02ZM611.38,40.75l2.67,6.65h-5.34l2.67-6.65Z"/>
+    <path class="marca-st0" d="M631.04,45.53c0-4.13-3.17-6.59-7.15-6.59h-3.96v13.41h3.96c4.42,0,7.15-2.32,7.15-6.82ZM623.88,50.66h-2.02v-10.03h2.25c2.77,0,4.9,1.84,4.9,4.97,0,3.46-1.83,5.05-5.13,5.05Z"/>
+    <path class="marca-st0" d="M650.25,45.53c0-4.13-3.17-6.59-7.15-6.59h-3.96v13.41h3.96c4.42,0,7.15-2.32,7.15-6.82ZM641.06,50.66v-10.03h2.25c2.77,0,4.9,1.84,4.9,4.97,0,3.46-1.82,5.05-5.13,5.05h-2.02Z"/>
+    <polygon class="marca-st0" points="660.73 50.66 655.14 50.66 655.14 46.24 660.23 46.24 660.23 44.55 655.14 44.55 655.14 40.63 660.73 40.63 660.73 38.94 653.22 38.94 653.22 52.35 660.73 52.35 660.73 50.66"/>
+    <path class="marca-st0" d="M549.66,64l-13.37,31.3h4.71l3.19-7.89h15.34l3.19,7.89h4.89l-13.23-31.3h-4.71ZM545.62,83.73l6.23-15.52,6.23,15.52h-12.46Z"/>
+    <path class="marca-st0" d="M584.29,84.45l4.8,10.85h5.11l-5.92-12.47c-.98-1.93-1.66-2.6-3.05-3.14v-.09c3.63-.63,6.46-3.32,6.46-7.13,0-7.49-5.97-8.48-12.16-8.48h-7.67v31.3h4.48v-13.9h2.69c2.38,0,3.86,0,5.25,3.05ZM576.35,77.45v-9.51h4.3c4.13,0,6.28,1.8,6.28,4.62,0,3.01-2.51,4.89-6.77,4.89h-3.81Z"/>
+    <polygon class="marca-st0" points="595.24 67.94 604.97 67.94 604.97 95.3 609.46 95.3 609.46 67.94 619.19 67.94 619.19 64 595.24 64 595.24 67.94"/>
+    <polygon class="marca-st0" points="641.44 91.36 628.39 91.36 628.39 81.04 640.27 81.04 640.27 77.09 628.39 77.09 628.39 67.94 641.44 67.94 641.44 64 623.9 64 623.9 95.3 641.44 95.3 641.44 91.36"/>
+    <path class="marca-st0" d="M654.05,91.9c-2.29,0-4.98-.89-6.5-1.52l-.45,4.17c2.07.67,4.22,1.3,6.42,1.3,6.28,0,11.44-2.64,11.44-9.33,0-10.31-13.46-8.93-13.46-14.93,0-3.27,2.96-4.17,5.47-4.17,2.33,0,3.59.4,5.87,1.3l.63-4.13c-2.15-.76-4.62-1.12-6.68-1.12-5.65,0-10.04,2.96-10.04,8.53,0,9.73,13.45,7.8,13.45,14.8,0,3.68-3.58,5.11-6.14,5.11Z"/>
+    <polygon class="marca-st0" points="550.83 122.72 541.49 108.68 536.24 108.68 548.49 126.89 548.49 139.99 552.98 139.99 552.98 126.89 565.18 108.68 559.93 108.68 550.83 122.72"/>
+    <path class="marca-st0" d="M591.11,108.68h-9.24v31.31h9.24c10.32,0,16.68-5.43,16.68-15.92,0-9.65-7.4-15.39-16.68-15.39ZM591.07,136.04h-4.72v-23.41h5.25c6.46,0,11.44,4.31,11.44,11.62,0,8.07-4.26,11.8-11.97,11.8Z"/>
+    <rect class="marca-st0" x="614.52" y="108.68" width="4.49" height="31.31"/>
+    <path class="marca-st0" d="M629.87,116.26c0-3.27,2.96-4.17,5.47-4.17,2.33,0,3.59.4,5.87,1.3l.62-4.13c-2.15-.76-4.62-1.12-6.68-1.12-5.65,0-10.05,2.96-10.05,8.52,0,9.73,13.46,7.8,13.46,14.8,0,3.68-3.59,5.12-6.15,5.12-2.29,0-4.98-.9-6.51-1.52l-.44,4.17c2.06.67,4.22,1.3,6.41,1.3,6.28,0,11.44-2.64,11.44-9.33,0-10.31-13.45-8.93-13.45-14.94Z"/>
+    <polygon class="marca-st0" points="649.65 139.99 667.19 139.99 667.19 136.04 654.14 136.04 654.14 125.72 666.02 125.72 666.02 121.78 654.14 121.78 654.14 112.63 667.19 112.63 667.19 108.68 649.65 108.68 649.65 139.99"/>
+    <path class="marca-st0" d="M683.07,104.1c1.89-.04,4.57,2.07,6.91,2.07,3.05,0,3.95-3.09,4.22-5.02h-2.07c-.13,1.03-.72,2.15-2.06,2.06-1.89.04-4.58-2.06-6.91-2.06-3.05,0-3.95,3.09-4.22,5.02h2.07c.13-1.03.72-2.15,2.06-2.07Z"/>
+    <polygon class="marca-st0" points="694.33 133.89 694.24 133.89 680.42 108.68 674.33 108.68 674.33 139.99 678.81 139.99 678.81 114.24 678.9 114.24 693.08 139.99 698.82 139.99 698.82 108.68 694.33 108.68 694.33 133.89"/>
+    <path class="marca-st0" d="M720.22,108.14c-9.51,0-15.07,6.91-15.07,16.19s5.52,16.19,15.07,16.19,15.07-6.68,15.07-16.19-5.56-16.19-15.07-16.19ZM720.22,136.58c-7.23,0-10.32-6.01-10.32-12.25s3.41-12.29,10.32-12.24c6.91-.05,10.32,5.88,10.32,12.24s-3.09,12.25-10.32,12.25Z"/>
+    <g>
+      <path class="marca-st0" d="M494.76,76.85h-3.71v22.74h3.71c2.95,0,5.47-1,7.66-3.04,2.19-2.05,3.28-4.8,3.28-8.33s-1.09-6.14-3.28-8.23c-2.14-2.09-4.66-3.14-7.66-3.14Z"/>
+      <polygon class="marca-st0" points="459.5 91.98 469.21 91.98 464.4 78.28 459.5 91.98"/>
+      <path class="marca-st0" d="M498.01,36.94h-79.45v79.45c0,12.77,10.35,23.12,23.12,23.12h79.45V60.06c0-12.77-10.35-23.12-23.12-23.12ZM447.69,90.27h-11.23v14.56h-6.66v-33.21h18.46v5.23h-11.8v8.18h11.23v5.23ZM473.92,104.83l-2.85-7.61h-13.46l-2.9,7.61h-6.9l12.94-33.21h7.52l13.03,33.21h-7.37ZM507.37,101.12c-3.47,2.47-8.09,3.71-13.89,3.71h-9.09v-33.21h9.09c5.8,0,10.42,1.24,13.94,3.71,3.47,2.47,5.19,6.76,5.23,12.89,0,6.09-1.76,10.37-5.28,12.89Z"/>
+    </g>
+    <g>
+      <path class="marca-st0" d="M72.41,132.02c15.92-.13,27.15-12.96,31.94-26.88H40.2c4.95,14.03,16.15,26.88,32.21,26.88ZM72.68,110.01v-.19c1-.38,2.45-.92,4.24-1.32.99-.22,2.06-.41,3.22-.49.1,0,1.31-.06,1.82-.05.12,0,1.1.06,1.92.14,0,0,.01,0,.02,0,0,.15,0,.31,0,.46.03,6.28.07,15.79.07,15.79-5.67-.88-10.88,2.06-11.33,2.25l.03-16.58ZM59.76,108.23v-.22c.81-.07,2.04-.16,2.22-.16.24,0,1.11.05,1.3.06.96.07,2.13.23,3.41.51,2.56.55,1.93.35,4.65,1.4v.18s.03,16.58.03,16.58c-5.11-2.03-9.29-2.59-11.26-2.25l-.43-15.72s.07-.25.07-.25v-.14Z"/>
+      <g>
+        <g>
+          <path class="marca-st0" d="M67.48,88.63c-.49-.87-1.13-.51-1.13-.51.03.36-1.95.3-1.95.3,0,0-.06-.42-.48-.76-.42-.33-.99.85-1.22,1.03-.24.18-.75.24-1.17,1.33-.42,1.08.06,1.06.06,1.06-.24,1.6.42,1.99.75,2.08.33.09.15-.63.15-.63.21-.06.3-.42.3-.42.68-.21.81-.6.81-.6,0,0,.51,0,1.1-.18.6-.18.96-.82.96-.82,0,0,.36-.24.87-.48.51-.24.93-.12.93-.12,0,0,.3-.79.03-1.26Z"/>
+          <path class="marca-st0" d="M105.93,84.32s-1.7.06-3.02-.13c-1.32-.18-13.87-5.7-14.88-6-1.01-.3-1.47-.81-2.81-.39-1.35.42-8,.82-8.34.82s-1.43.33-1.97,1.23c-.7,1.18-3.62,4.12-3.94,4.22-.33.09-1.23-.51-1.38-.76-.14-.24-.56-1.44-.98-3.32-.42-1.87-1.1-2.44-1.49-2.77-.4-.33-5.92-5.55-6.67-6.21-.75-.66-1.47-.54-1.47-.54l-3.85.02h-3.13l-1.18.04c-2.15.02-6.03.06-6.3.06-.39,0-2.21-.42-2.21-.42-.39.03-.21.31.41,1.03.63.73,2.99.94,4.1.79,1.1-.16.23.27.23.27-1.1.45-2.53,0-3.04,0s-.06.36.78.93c.84.58,3.07.55,4.69.4,1.61-.15.39.15.39.15-1.34.48-2.75.42-3.94.33-1.19-.09.54,1.21,1.67,1.39,1.14.18,2.87-.84,3.35-.54.48.3-1.1.57-2.06.81-.95.24-1.58.45-.09,1.02,1.49.57,2.9-.3,3.71-.39.8-.09.27.3.27.3-1.44.51-.87,0-1.79.45-.93.46,1.01.82,1.58.75.57-.05,2.36-.5,2.57-.57.22-.06.63-.27.22.24-.42.51-1.79.72-1.79.72,0,0-1.72.62-.42,1,1.01.29,1.82.06,2.21-.18.54-.34,1.97-.97,1.65-.71-1.51,1.24-1,1.47-1,1.47,1.29.85,2.69-.6,3.26-.72.57-.13-.98,1.03-.69,1.51.52.87,3.14-.11,3.14-.11,0,0-1.21.48-.67,1.29.23.35,1.35.31,1.71-.02.37-.33.21.06.16.36-.06.3-.2.87.21,1.28.5.5.66.17.66-.2,0-.35.51-1.08.65-1.08s-.12.76-.12,1.5,3.38,1.78,3.38,1.96-.42.42-.69.6c-.27.18-.59.18-.95.33-.36.16-1.05.7-.81,1.12.24.43.36-.03.36-.03.06-.75,2.99-1.54,3.57.8.35,1.4-1.12,2.07-1.45,2.12-.33.06-.48.27-.27.3.71.12.84.18,2.12.27,1.28.09,1.32-.51,2.06-.58.75-.06.57-.33,1.08-.33s.29.39-.06.9c-.36.51-.77.94-.38,1.21.38.27.77-.38.98-.53.21-.15.06.81.45,1.08.5.33.63-.73.75-1.15.12-.42.33-.15.33-.15.03,1.35.39,1.53.8,1.56.42.03.24-.99.24-1.32s.09-.6.19-.24c.08.36.96,1.73,1.43,1.79.48.06.42-.53.29-.86-.12-.33-.06-.61-.06-.61,0,0,1.24,1.31,1.65,1.18.9-.3.71-.36.59-1.08-.12-.73-2.75-4.43-2.9-4.7-.15-.27-.21-.45.39-.24.6.21,1.42-.18,1.66-.67.24-.48-.02-.99.16-.99s1.59,1.06,2.57,1.76c.99.69,1.32.93,2.28.75.96-.18.17-.45-.04-.94-.21-.48.44-.05.44-.05,0,0,1.38.74,1.65.9.27.15,1.47.21.98-.36-.47-.58-.33-.79-.33-1.12s.88.86,1.42,1.28c1.8,1.4,1.86.01,1.86.01,1.91,2.66,5.08,3.78,5.92,3.81.83.02.67-.64.37-.79-.29-.16-1.14-.32-1.44-.77-.3-.46-.06-.43.27-.24.32.17,1.74.93,2.63.96.9.03.93-.58.12-1.11-.66-.43-2.18-1.69-2.6-2.08-.42-.39.18-.42.36-.27.18.15,1.36.85,2.69,1.87,1.5,1.17,3,.29,3.16.02.23-.41-1.11-.7-2.14-1.47-1.14-.85-3.16-1.86-3.89-2.41-.72-.54.6-.06.6-.06,2.42,1.39,5.2,2.32,6.03,2.41.84.09,2.49-.03,2.72-.79.24-.75-.9-.24-2.39-.6-1.12-.27-3.38-1.03-4.06-1.54-.69-.51.39-.15.39-.15,4.36,1.87,6.13,1.3,6.13,1.3,2.36-.69,1.01-1.39,1.01-1.39Z"/>
+        </g>
+        <g>
+          <polygon class="marca-st0" points="59.88 141.55 61.26 141.97 61.26 139.63 61.25 139.62 59.88 141.55"/>
+          <path class="marca-st0" d="M50.31,134.03c-.76-.54-1.55-.07-2.12.75-.55.77-.76,1.71,0,2.25.76.54,1.57.03,2.12-.75.58-.81.76-1.71,0-2.25Z"/>
+          <polygon class="marca-st0" points="98.29 40.72 98.28 40.71 96.26 41.95 97.38 42.89 98.29 40.72"/>
+          <polygon class="marca-st0" points="76.88 140.88 76.47 143.21 77.89 143 76.89 140.88 76.88 140.88"/>
+          <path class="marca-st0" d="M44.18,128.95l-2.41,2.49.42.41c.82.79,1.69.82,2.49,0,.79-.82.73-1.71-.07-2.48l-.42-.41Z"/>
+          <polygon class="marca-st0" points="68.34 31.01 68.32 31.01 67.79 33.31 69.23 33.18 68.34 31.01"/>
+          <path class="marca-st0" d="M52.59,39.93c.99-.6,1.23-1.44.64-2.42-.59-.98-1.47-1.14-2.43-.55l-.51.31,1.79,2.97.51-.31Z"/>
+          <path class="marca-st0" d="M84.33,36.58c.88.33,1.54-.38,1.87-1.26.35-.93.29-1.85-.59-2.18-.88-.32-1.52.33-1.87,1.26-.33.89-.29,1.85.59,2.18Z"/>
+          <path class="marca-st0" d="M42.32,48.88c.76-.87.74-1.74-.13-2.49-.86-.75-1.75-.63-2.49.21l-.39.45,2.61,2.28.39-.45Z"/>
+          <polygon class="marca-st0" points="47.27 42.32 45.29 41.06 45.28 41.07 46.17 43.26 47.27 42.32"/>
+          <path class="marca-st0" d="M32.3,59.1c-.48-.22-.8.22-1.05.76l-.17.37,1.18.55.17-.37c.21-.45.46-1.03-.13-1.31Z"/>
+          <path class="marca-st0" d="M82.85,139.41l-.38.13.41,1.24.38-.13c.47-.16,1.06-.37.85-.99-.17-.51-.71-.43-1.26-.25Z"/>
+          <path class="marca-st0" d="M107.93,54.55c.96-.62,1.1-1.51.49-2.46l-.32-.5-2.92,1.88.32.5c.62.97,1.47,1.2,2.43.58Z"/>
+          <polygon class="marca-st0" points="113.28 111.55 110.94 111.35 110.93 111.37 112.74 112.89 113.28 111.55"/>
+          <path class="marca-st0" d="M71.84,27.52c-27.43,0-49.74,26.98-49.74,60.14s22.31,60.14,49.74,60.14,49.74-26.98,49.74-60.14-22.31-60.14-49.74-60.14ZM119.09,78.44l-2.17,1.38,2.41.87.19,1.77-3.79-1.74-2.15.23-.17-1.54,2.15-.23,3.33-2.51.19,1.77ZM117.95,71.87l-3.24.68c-.74.16-1.33.49-1.16,1.26.16.77.83.84,1.58.69l3.24-.68.32,1.51-3.49.73c-1.54.32-2.44-.54-2.76-2.01-.31-1.48.17-2.63,1.71-2.95l3.49-.73.32,1.51ZM116.81,67.22c.18.56.23,1.15.24,1.73l-1.22.26c.11-.56.08-1.06-.08-1.56-.34-1.04-1.31-1.48-2.32-1.16-1.07.34-1.48,1.32-1.13,2.4.16.48.44.93.72,1.28l-1.12.44c-.24-.39-.5-.82-.74-1.57-.47-1.47-.28-3.41,1.79-4.07,1.9-.61,3.28.43,3.87,2.25ZM113.88,59.63l-.97.48-1.12-2.28-1.06.52,1.06,2.15-.97.48-1.06-2.15-1.17.57,1.16,2.36-.97.48-1.84-3.74,5.15-2.53,1.8,3.66ZM109.35,51.45c1.09,1.7,1.32,3.22-.54,4.43-1.8,1.16-3.22.35-4.28-1.32l-1.14-1.78,4.83-3.11,1.14,1.77ZM103.63,44.13l-3.38,3.13,1.63,1.75-.83.77-2.68-2.89,4.22-3.91,1.05,1.13ZM99.77,40.42l-1.97,5.84-1.3-1.09.45-1.22-1.67-1.39-1.14.65-1.2-1.01,5.37-3,1.45,1.21ZM92.27,35.09l-.29,4.35h.01s1.96-3.36,1.96-3.36l1.22.71-2.92,4.95-1.65-.97.25-4.41h-.01s-1.95,3.4-1.95,3.4l-1.22-.72,2.92-4.95,1.7,1ZM82.24,33.85c.64-1.73,1.97-2.44,3.76-1.77,1.79.66,2.33,2.07,1.69,3.79-.64,1.71-1.98,2.43-3.76,1.77-1.77-.66-2.33-2.08-1.69-3.79ZM79.81,30.41l1.51.33-1.23,5.61-1.51-.33,1.23-5.61ZM76.32,29.78c.59.05,1.14.23,1.68.44l-.23,1.22c-.47-.31-.94-.49-1.47-.53-1.09-.1-1.87.63-1.96,1.69-.1,1.12.64,1.87,1.77,1.97.5.04,1.03-.04,1.46-.17l-.03,1.2c-.45.07-.94.15-1.73.08-1.54-.13-3.24-1.06-3.05-3.22.18-1.99,1.67-2.86,3.57-2.69ZM67.28,29.92l1.88-.18,2.76,5.5-1.68.16-.54-1.18-2.16.2-.34,1.26-1.56.14,1.65-5.91ZM60.03,31.48l2.97,3.18h.02s-1.12-3.73-1.12-3.73l1.35-.4,1.61,5.5-1.84.54-3.04-3.19h-.02s1.15,3.75,1.15,3.75l-1.36.4-1.61-5.5,1.89-.55ZM50.18,36.01c1.72-1.05,3.25-1.24,4.4.66,1.11,1.84.26,3.23-1.43,4.25l-1.8,1.09-2.97-4.91,1.8-1.09ZM45.24,39.54l5.43,2.92-1.29,1.1-1.13-.65-1.66,1.41.45,1.23-1.19,1.02-2.06-5.8,1.44-1.23ZM38.83,45.88c1.32-1.52,2.72-2.17,4.39-.71,1.62,1.41,1.23,2.99-.07,4.48l-1.38,1.59-4.32-3.77,1.38-1.59ZM36.26,49.13l4.69,3.32-.89,1.26-4.69-3.32.89-1.26ZM33.38,53.29c.28-.48.63-.91.94-1.18l.97.69c-.36.25-.66.59-.88.97-.2.33-.5.91-.07,1.16.8.47,1.66-2.2,3.44-1.14,1.28.76.98,2.05.33,3.16-.27.46-.69,1-1.09,1.36l-1.02-.76c.39-.23.81-.63,1.14-1.18.25-.42.4-.87,0-1.11-.92-.55-1.73,2.15-3.53,1.09-1.19-.71-.82-2.07-.23-3.07ZM30.61,58.68c.43-.93,1.2-1.5,2.1-1.09.69.32,1,.87.85,1.62h.02c.33-.39.74-.24,1.49-.21l1.65.14-.68,1.46-1.08-.13c-1.03-.13-1.34-.05-1.58.47l-.14.29,2.06.95-.65,1.4-5.21-2.41,1.16-2.5ZM28.78,62.88l1.02.36-.84,2.4,1.12.39.79-2.26,1.02.36-.79,2.26,1.23.43.87-2.48,1.02.36-1.38,3.94-5.42-1.89,1.35-3.85ZM26.01,72.18l4.68-.18v-.02s-4.07-2.32-4.07-2.32l.37-1.54,5.11,3.27-.45,1.85-6.03.53.38-1.6ZM25.41,75.23l5.66.92-.25,1.52-5.66-.92.25-1.52ZM24.58,82.02l4.05-1.63v-.02s-3.89-.29-3.89-.29l.11-1.4,5.73.47-.16,1.91-4.08,1.69v.02s3.92.27,3.92.27l-.12,1.41-5.73-.47.16-1.96ZM24.44,89.41l3.31-.07c.76-.02,1.4-.24,1.38-1.03-.02-.79-.66-.98-1.42-.97l-3.31.07-.03-1.55,3.56-.07c1.57-.03,2.3.98,2.33,2.49.03,1.51-.65,2.56-2.23,2.59l-3.56.07-.03-1.54ZM30.31,117.02l4.05-1.76v-.02s-4.64.45-4.64.45l-.57-1.29,3.47-3.07h0s-4.03,1.8-4.03,1.8l-.61-1.37,5.26-2.33.98,2.21-3,2.66h0s4.01-.36,4.01-.36l.94,2.12-5.26,2.33-.61-1.37ZM34.08,123.68l-2.14-3.54,4.91-2.97,2.09,3.46-.93.56-1.3-2.15-1.01.61,1.23,2.03-.93.56-1.23-2.03-1.11.67,1.35,2.23-.93.56ZM37.23,127.99l1.86-3.99h0s-3.07,2.44-3.07,2.44l-.86-1.11,4.53-3.52,1.2,1.54-1.89,3.92h.01s3.06-2.4,3.06-2.4l.86,1.1-4.53,3.52-1.17-1.5ZM41.37,132.64l-1.5-1.45,3.99-4.11,1.5,1.45c1.43,1.39,2,2.81.46,4.4-1.49,1.54-3.04,1.07-4.45-.29ZM47.54,137.95c-1.53-1.08-1.69-2.6-.64-4.09,1.06-1.5,2.52-1.85,4.06-.76,1.54,1.09,1.7,2.58.64,4.09-1.05,1.49-2.53,1.84-4.06.76ZM55.46,142.38l-4.02-2.01.55-1.09,3.96-1.81-2.38-1.19.51-1.02,3.94,1.97-.55,1.09-4.03,1.77,2.53,1.27-.51,1.02ZM61.33,144.41l-.05-1.3-2.06-.63-.79,1.04-1.48-.46,3.77-4.85,1.79.55.43,6.13-1.6-.49ZM31.66,87.75c0-27.76,18.04-50.35,40.21-50.35s40.21,22.59,40.21,50.35-18.04,50.35-40.21,50.35-40.21-22.59-40.21-50.35ZM79,145.18l-.6-1.15-2.13.31-.27,1.27-1.54.22,1.34-5.99,1.85-.27,3,5.36-1.66.24ZM85.57,143.41l-.64-.88c-.61-.84-.87-1.01-1.41-.83l-.3.1.71,2.15-1.45.48-1.81-5.45,2.59-.86c.97-.32,1.9-.14,2.21.79.24.73.06,1.32-.59,1.72h0c.51-.02.68.39,1.17.96l1.02,1.31-1.51.5ZM91.64,140.8c-1.35.72-3.27.86-4.29-1.05-1.01-1.91-.06-3.36,1.8-4.34.33-.18,1.06-.51,1.65-.59l.48,1.16c-.55-.02-1.09.16-1.41.33-1.1.58-1.75,1.52-1.13,2.7.53.99,1.55,1.22,2.54.7.18-.1.34-.22.43-.34l-.53-1-.79.42-.51-.96,2.1-1.11,1.5,2.82c-.74.67-1.37,1.03-1.84,1.27ZM95.39,138.45l-3.42-4.62,3.25-2.41.65.87-2.02,1.5.71.95,1.91-1.42.65.87-1.91,1.41.77,1.05,2.1-1.55.65.87-3.33,2.46ZM102.72,132.3l-4.18-1.39h-.01s2.79,2.78,2.79,2.78l-1,.99-4.03-4.1,1.39-1.37,4.12,1.42h.01s-2.75-2.78-2.75-2.78l1-.98,4.03,4.1-1.36,1.33ZM106.05,128.61l-3.61-2.87-.88,1.11-.89-.71,2.72-3.41.89.71-.88,1.11,3.61,2.87-.95,1.2ZM108.75,125.03l-4.76-3.21.86-1.27,4.76,3.21-.86,1.27ZM112.36,119.11l-4.4-.13h0s3.46,1.86,3.46,1.86l-.68,1.23-5.03-2.76.94-1.71,4.35.17h0s-3.43-1.87-3.43-1.87l.67-1.23,5.03,2.76-.91,1.67ZM115.72,111.68l-1.3-.06-.8,2,.97.88-.58,1.44-4.52-4.16.7-1.74,6.15.08-.62,1.56ZM116.77,89.55c-1.83.02-2.98-.98-3.01-2.87-.02-1.89,1.11-2.92,2.94-2.94,1.84-.02,2.98.96,3.01,2.87.02,1.91-1.09,2.92-2.94,2.94Z"/>
+          <path class="marca-st0" d="M116.72,85.33c-.95.01-1.83.4-1.82,1.33.01.94.9,1.3,1.85,1.29,1-.01,1.83-.4,1.82-1.34-.01-.94-.86-1.3-1.85-1.29Z"/>
+        </g>
+      </g>
+      <path class="marca-st0" d="M51.19,65.7s4.96.8,9.52-2.48c4.57-3.29,5.48-8.12,10.77-7.72,5.3.4,4.16.44,9.01,7.13,4.86,6.68,6.46,6.73,7.49,7.07.79.26,14.46.12,16.33.12l-.17-.68s-9.71-26.88-32.26-26.88-31.16,23.44-31.16,23.44c0,0,6.03-.07,10.48,0Z"/>
+    </g>
+  </g>
+  <g>
+    <circle class="marca-st0" cx="774.45" cy="44.02" r="11.28"/>
+    <path class="marca-st0" d="M931.18,78.23l-.07,50.26c-.01,6.26-5.35,10.92-11.21,10.92-5.94,0-11.22-4.65-11.23-10.9l-.07-39.09c0-5.85-4.45-10.61-10.19-11.05l-7.65-.04-.12,50.55c-.01,6.02-5.34,10.52-11.19,10.53h-61.43c-6.37.01-11.47-4.87-11.47-11.28v-49.9c0-5.92,4.64-11.17,10.71-11.18l50.94-.09v-22.61c-.01-6.29,4.65-11.26,10.73-11.56,5.85-.29,11.69,4.17,11.72,10.41l.09,23.76,29.7.09c6.11.02,10.59,5.22,10.74,11.19ZM868.21,116.87v-28.55c-.66-5.36-4.65-9.38-10.04-10.01h-40.26s0,28.58,0,28.58c.76,5.82,5.39,9.95,11.28,9.99h39.02Z"/>
+    <circle class="marca-st0" cx="919.88" cy="44.02" r="11.28"/>
+    <path class="marca-st0" d="M796.17,78.28c-5.98.53-10.45,5.25-10.46,11.18l-.12,39.43c-.02,6.01-5.34,10.43-11.01,10.51s-11.22-4.16-11.22-10.17v-52.11c0-5.58,5.32-10.11,10.64-10.11h35.96c-4.3,2.23-6.84,6.32-6.23,11.26h-7.56Z"/>
+  </g>
+</svg></div>
+  </div>
+</div>
+
+<div class="contenedor portada">
+  <h1>Plantillas para la lámina de entrega</h1>
+  <p class="bajada">Introducción al Diseño Industrial</p>
+  <div class="regla"></div>
+
+  <div class="intro">
+    <p>En este espacio vas a encontrar plantillas para armar la lámina de entrega del proyecto.</p>
+    <p>Cada una es una diagramación distinta: la misma información, ordenada de otra manera. Todas están construidas sobre una grilla, que es el sistema invisible que hace que los elementos estén alineados entre sí. Vos tenés que elegir la que mejor se lleve con tu proyecto y reemplazar las imágenes y los textos.</p>
+    <p>Vamos a trabajar en Canva, que es gratuito y funciona desde el navegador, desde tu celular o compu de escritorio. No hace falta instalar nada.</p>
+  </div>
+
+  <a class="saltar" href="#plantillas">Ver las plantillas</a>
+</div>
+
+<div class="contenedor pasos">
+
+  <section>
+    <h2><span class="n">1</span>Vamos desde el principio</h2>
+    <div class="borde"></div>
+    <p>Para empezar tenés que elegir una diagramación de lámina que te parezca interesante. Esa va a ser tu plantilla para comenzar a trabajar.</p>
+    <p>Lo que vas a ver es un esquema, una diagramación, en la que vas a poder reemplazar las imágenes y los textos. Cuando elijas una, hacé clic en el botón para abrirla.</p>
+    <p>Al abrirla te va a dirigir a Canva y te va a pedir que inicies sesión. Si no tenés cuenta, creá una gratuita con tu correo, es muy fácil.</p>
+    <p>Cuando entres, Canva va a crear automáticamente una copia de la plantilla en tu cuenta. Esa lámina que se abre ya es tuya, podés modificar todo sin miedo.</p>
+    <p>Es conveniente que le pongas nombre a tu diseño desde el título que aparece arriba a la izquierda. Usá tu apellido y el número de TP, para poder encontrarlo después.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>Reemplazar las imágenes</h2>
+    <div class="borde"></div>
+    <p>Las imágenes de la plantilla están dentro de marcos. Un marco recorta la foto sola para que entre en el espacio, sin que se deforme.</p>
+    <p>Lo primero que tenés que hacer es subir tus fotos a Canva. En el panel de la izquierda entrá a Subidas y hacé clic en Subir archivos. Buscá las fotos en tu computadora o celular y esperá a que carguen. Van a quedar guardadas ahí para todo el trabajo.</p>
+    <p>Después arrastrá una foto desde el panel hasta arriba del marco donde la querés poner. Cuando el marco se ilumine, soltá. La foto entra y se acomoda sola.</p>
+    <p>Si querés cambiar qué parte de la foto se ve, hacé doble clic sobre ella. Vas a poder moverla dentro del marco y agrandarla o achicarla. Cuando termines, hacé clic afuera.</p>
+    <p>Para cambiar una foto que ya pusiste, arrastrá la nueva encima. Reemplaza a la anterior.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>Las líneas guía</h2>
+    <div class="borde"></div>
+    <p>La plantilla está construida sobre una grilla: unas líneas que dividen la lámina en doce columnas. No se imprimen, solo se ven mientras trabajás.</p>
+    <p>Eso es lo que sostiene la lámina. Cada imagen y cada texto está apoyado sobre esas columnas, y por eso todo queda alineado entre sí sin que tengas que medir nada.</p>
+    <p>Mirala un rato antes de empezar. Vas a entender por qué cada cosa está donde está, y si alguna vez movés un elemento, las guías te muestran dónde volver a apoyarlo.</p>
+    <p>En la computadora vienen ocultas. Para verlas andá al menú Archivo, entrá a Configuración y tildá Mostrar reglas y guías.</p>
+    <p>En el celular ya aparecen, no tenés que hacer nada.</p>
+    <p>Están bloqueadas, así que no las podés mover sin querer.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>Editar los textos</h2>
+    <div class="borde"></div>
+    <p>Hacé doble clic sobre cualquier texto para escribir arriba. Se selecciona todo y lo que escribas reemplaza lo que estaba.</p>
+    <p>Los textos que vas a encontrar dicen qué va en cada lugar.</p>
+    <p>No cambies el tamaño ni la tipografía. Ya están elegidos para que la lámina se lea bien impresa. Si tu texto no entra, el problema es que es largo, no que la letra es grande.</p>
+    <p>Si al escribir el texto se sale de la caja, acortalo. Saber sintetizar también es parte del trabajo.</p>
+    <p>El rótulo de la parte inferior, donde van tu nombre y los datos del trabajo, es el único lugar donde tenés que completar sin cambiar nada más. Los logos no se tocan.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>Descargar y entregar</h2>
+    <div class="borde"></div>
+    <p>Cuando termines tu lámina vas a poder generar dos archivos, uno para imprimir y otro para subir al aula virtual.</p>
+
+    <h3>Para imprimir</h3>
+    <p>Andá a Compartir, arriba a la derecha, y elegí Descargar. En Tipo de archivo seleccioná PDF para imprimir. Descargalo y llevá ese archivo a la imprenta.</p>
+    <p>Avisá en la imprenta que es un A3 y pedí que lo impriman a tamaño real, sin ajustar ni escalar.</p>
+
+    <h3>Para el aula virtual</h3>
+    <p>Repetí el mismo camino pero elegí PDF estándar. Ese archivo pesa mucho menos y es el que vas a poder subir fácilmente.</p>
+    <p>Nombrá el archivo con tu apellido y el número de TP antes de subirlo.</p>
+  </section>
+
+</div>
+
+<div class="galeria" id="plantillas">
+  <div class="contenedor">
+    <h2>Las plantillas</h2>
+    <p class="intro-gal">Elegí la que mejor se lleve con tu proyecto y hacé clic en Abrir en Canva.</p>
+
+    <div class="grilla">
+
+      <div class="ficha">
+        <img src="img/lamina-01.jpg" alt="Lámina 1: imagen principal vertical con la secuencia de uso apilada a la derecha.">
+        <div class="num">LÁMINA 1</div>
+        <p>Imagen principal vertical, secuencia de uso apilada a la derecha. Cinco espacios de imagen.</p>
+        <a href="https://www.canva.com/design/DAHVAE5NBX8/fj-Nr8hlcIBpVVjISi7mUg/remix" target="_blank" rel="noopener">Abrir en Canva</a>
+      </div>
+
+      <div class="ficha">
+        <img src="img/lamina-02.jpg" alt="Lámina 2: imagen principal grande con la secuencia de uso en tira vertical a la izquierda.">
+        <div class="num">LÁMINA 2</div>
+        <p>Imagen principal grande, secuencia de uso en tira vertical a la izquierda. Cinco espacios de imagen.</p>
+        <a href="https://www.canva.com/design/DAHVCZLkdoI/20sbdKNhDSQWGGNfFDzjxA/remix" target="_blank" rel="noopener">Abrir en Canva</a>
+      </div>
+
+      <div class="ficha">
+        <img src="img/lamina-03.jpg" alt="Lámina 3: imagen principal apaisada arriba y una tira de cuatro imágenes al pie.">
+        <div class="num">LÁMINA 3</div>
+        <p>Imagen principal apaisada arriba, contexto y secuencia en una tira de cuatro al pie. Cinco espacios de imagen.</p>
+        <a href="https://www.canva.com/design/DAHVCdxTSBA/bsO8XY3Sr0QXVXQL9V51dQ/remix" target="_blank" rel="noopener">Abrir en Canva</a>
+      </div>
+
+      <div class="ficha">
+        <img src="img/lamina-04.jpg" alt="Lámina 4: imagen principal apaisada y tres espacios libres al pie.">
+        <div class="num">LÁMINA 4</div>
+        <p>Imagen principal apaisada y tres espacios libres al pie. Usalos para la secuencia de uso completa, o para el contexto más dos pasos de uso.</p>
+        <a href="https://www.canva.com/design/DAHVSgqKSuI/Wu6QZF0bE4-R4rC7b-3ZFg/remix" target="_blank" rel="noopener">Abrir en Canva</a>
+      </div>
+
+      <div class="ficha">
+        <img src="img/lamina-05.jpg" alt="Lámina 5: imagen principal vertical con tres espacios libres apilados a la derecha.">
+        <div class="num">LÁMINA 5</div>
+        <p>Imagen principal vertical, tres espacios libres apilados a la derecha y los textos al pie. Usalos para la secuencia completa, o para el contexto más dos pasos de uso.</p>
+        <a href="https://www.canva.com/design/DAHVW4bFmbg/-MxaWezQWYWM3JxfCjzeDA/remix" target="_blank" rel="noopener">Abrir en Canva</a>
+      </div>
+
+      <div class="ficha">
+        <img src="img/lamina-06.jpg" alt="Lámina 6: tres espacios libres arriba y la imagen principal abajo.">
+        <div class="num">LÁMINA 6</div>
+        <p>Tres espacios libres arriba y la imagen principal abajo, con los textos al pie. La lectura va del uso al producto. Usá los tres espacios para la secuencia completa, o para el contexto más dos pasos de uso.</p>
+        <a href="https://www.canva.com/design/DAHVTsZwSTY/MEPRc6TrBgAcEkby3eQ1Og/remix" target="_blank" rel="noopener">Abrir en Canva</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contenedor">
+    Introducción al Diseño Industrial · Facultad de Artes y Diseño · Universidad Nacional de Cuyo · 2026
+  </div>
+</footer>
+
+</body>
+</html>
